@@ -1,0 +1,9 @@
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\bin\Debug\hastane_sistemi.exe.config
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\bin\Debug\hastane_sistemi.exe
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\bin\Debug\hastane_sistemi.pdb
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.csprojAssemblyReference.cache
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Properties.Resources.resources
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.csproj.GenerateResource.cache
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.csproj.CoreCompileInputs.cache
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.exe
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.pdb
