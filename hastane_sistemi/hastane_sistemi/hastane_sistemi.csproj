@@ -46,27 +46,231 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Admin_AllAdmins.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Admin_AllAdmins.Designer.cs">
+      <DependentUpon>Admin_AllAdmins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AllPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AllPatients.Designer.cs">
+      <DependentUpon>Admin_AllPatients.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminLogin.Designer.cs">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AllAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AllAppointments.Designer.cs">
+      <DependentUpon>Admin_AllAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_AllDoctors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_AllDoctors.Designer.cs">
+      <DependentUpon>Admin_AllDoctors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_CreateNewAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_CreateNewAdmin.Designer.cs">
+      <DependentUpon>Admin_CreateNewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_EditInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_EditInformation.Designer.cs">
+      <DependentUpon>Admin_EditInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_UpdateInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_UpdateInformation.Designer.cs">
+      <DependentUpon>Admin_UpdateInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorLogin.Designer.cs">
+      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorPanel.Designer.cs">
+      <DependentUpon>DoctorPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DoctorSignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoctorSignForm.Designer.cs">
+      <DependentUpon>DoctorSignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_AssignedAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_AssignedAppointments.Designer.cs">
+      <DependentUpon>Doctor_AssignedAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_DoneAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_DoneAppointments.Designer.cs">
+      <DependentUpon>Doctor_DoneAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doctor_UpdateInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doctor_UpdateInformation.Designer.cs">
+      <DependentUpon>Doctor_UpdateInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EntryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EntryForm.Designer.cs">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hastaneDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>hastaneDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="PatientLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientLogin.Designer.cs">
+      <DependentUpon>PatientLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientPanel.Designer.cs">
+      <DependentUpon>PatientPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientSignForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientSignForm.Designer.cs">
+      <DependentUpon>PatientSignForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_CurrentAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_CurrentAppointments.Designer.cs">
+      <DependentUpon>Patient_CurrentAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_PastAppointments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_PastAppointments.Designer.cs">
+      <DependentUpon>Patient_PastAppointments.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_EditInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_EditInformation.Designer.cs">
+      <DependentUpon>Patient_EditInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Patient_MakeAppointment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Patient_MakeAppointment.Designer.cs">
+      <DependentUpon>Patient_MakeAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility.cs" />
+    <EmbeddedResource Include="AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_CreateNewAdmin.resx">
+      <DependentUpon>Admin_CreateNewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_UpdateInformation.resx">
+      <DependentUpon>Admin_UpdateInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorPanel.resx">
+      <DependentUpon>DoctorPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorSignForm.resx">
+      <DependentUpon>DoctorSignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_AssignedAppointments.resx">
+      <DependentUpon>Doctor_AssignedAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_DoneAppointments.resx">
+      <DependentUpon>Doctor_DoneAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doctor_UpdateInformation.resx">
+      <DependentUpon>Doctor_UpdateInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EntryForm.resx">
+      <DependentUpon>EntryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminLogin.resx">
+      <DependentUpon>AdminLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoctorLogin.resx">
+      <DependentUpon>DoctorLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientLogin.resx">
+      <DependentUpon>PatientLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientPanel.resx">
+      <DependentUpon>PatientPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientSignForm.resx">
+      <DependentUpon>PatientSignForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_CurrentAppointments.resx">
+      <DependentUpon>Patient_CurrentAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_PastAppointments.resx">
+      <DependentUpon>Patient_PastAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_EditInformation.resx">
+      <DependentUpon>Patient_EditInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Patient_MakeAppointment.resx">
+      <DependentUpon>Patient_MakeAppointment.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <None Include="hastaneDataSet.xsc">
+      <DependentUpon>hastaneDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="hastaneDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>hastaneDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="hastaneDataSet.xss">
+      <DependentUpon>hastaneDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -75,6 +279,93 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\media\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor-male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman-doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hospital %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient-protection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\administrator.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\appointment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book-appointments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personal-schedule.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\history %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\assign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\done.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interview-date.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\infected-people.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\father.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctors-team.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\healthcare.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor %283%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

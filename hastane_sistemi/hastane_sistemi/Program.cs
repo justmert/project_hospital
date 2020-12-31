@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace hastane_sistemi
 {
@@ -16,7 +18,11 @@ namespace hastane_sistemi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Utility.ConnectionStr = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            EntryForm entry_form = new EntryForm();
+            Application.Run(entry_form);
+
         }
     }
 }

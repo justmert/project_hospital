@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace hastane_sistemi
 {
-    public partial class Form1 : Form
+    public partial class Admin_AllDoctors : Form
     {
-        public Form1()
+        public Admin_AllDoctors()
         {
             InitializeComponent();
         }

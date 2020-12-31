@@ -1,0 +1,9 @@
+admin panel
+{
+	Update Database ( - add columns "name" and "surname")
+	Create New Admin 
+	Change Admin İnformation
+	List All Appointments
+	List All Doctors
+	List All Patients
+}
