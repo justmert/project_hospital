@@ -58,7 +58,9 @@ namespace hastane_sistemi
             String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
-                String query = String.Format("UPDATE hastane.dbo.doctor SET name = @name, surname = @surname,phone = @phone, mail = @mail, department = @department, password = @password Where tc = '{0}'", doctor_information["tc"]); ;
+                String query = String.Format("UPDATE hastane.dbo.doctor SET name = @name, surname = @surname,phone = @phone, mail = @mail, department = @department, password = @password Where tc = '{0}' and surname = '{1}'"
+                    , doctor_information["tc"], doctor_information["surname"]);
+
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@name", this.doctor_update_name_textbox.Text);

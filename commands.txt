@@ -53,7 +53,6 @@ INSERT INTO hastane.dbo.admin (username,password) VALUES('test',123)
 
 
 insert into hastane.dbo.department (department_id) Values('Algoloji')
-
 insert into hastane.dbo.department (department_id) Values('Beslenme ve Diyet')
 insert into hastane.dbo.department (department_id) Values('Beyin ve Sinir Cerrahisi')
 insert into hastane.dbo.department (department_id) Values('Çocuk Alerjisi')

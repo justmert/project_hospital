@@ -129,13 +129,13 @@ namespace hastane_sistemi
             {
                 var row = dataGridView1.SelectedRows[0];
                 Dictionary<String, String> doctor_info = new Dictionary<string, string>();
-                doctor_info.Add("name", row.Cells["name"].Value.ToString());
-                doctor_info.Add("surname", row.Cells["surname"].Value.ToString());
                 doctor_info.Add("tc", row.Cells["tc"].Value.ToString());
-                doctor_info.Add("phone", row.Cells["phone"].Value.ToString());
+                doctor_info.Add("name", row.Cells["name"].Value.ToString());
                 doctor_info.Add("mail", row.Cells["mail"].Value.ToString());
                 doctor_info.Add("department", row.Cells["department"].Value.ToString());
+                doctor_info.Add("surname", row.Cells["surname"].Value.ToString());
                 doctor_info.Add("password", row.Cells["password"].Value.ToString());
+                doctor_info.Add("phone", row.Cells["phone"].Value.ToString());
                 Doctor_UpdateInformation update_patient_info = new Doctor_UpdateInformation(doctor_info);
                 update_patient_info.ShowDialog();
                 this.doctorTableAdapter.FillBy(this.hastaneDataSet.doctor);
