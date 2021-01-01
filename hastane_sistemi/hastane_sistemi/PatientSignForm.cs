@@ -35,6 +35,7 @@ namespace hastane_sistemi
 
                     else
                     {
+                        MessageBox.Show("Başarılı şekilde kayıt oldunuz");
                         this.Close();
                     }
                 }

@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Admin_AllAdmins.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Admin_AllAdmins.Designer.cs">
-      <DependentUpon>Admin_AllAdmins.cs</DependentUpon>
-    </Compile>
     <Compile Include="Admin_AllPatients.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,11 +82,11 @@
     <Compile Include="Admin_CreateNewAdmin.Designer.cs">
       <DependentUpon>Admin_CreateNewAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Admin_EditInformation.cs">
+    <Compile Include="Admin_MakeAppointment.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Admin_EditInformation.Designer.cs">
-      <DependentUpon>Admin_EditInformation.cs</DependentUpon>
+    <Compile Include="Admin_MakeAppointment.Designer.cs">
+      <DependentUpon>Admin_MakeAppointment.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin_UpdateInformation.cs">
       <SubType>Form</SubType>
@@ -195,8 +189,20 @@
     <EmbeddedResource Include="AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AllAppointments.resx">
+      <DependentUpon>Admin_AllAppointments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AllDoctors.resx">
+      <DependentUpon>Admin_AllDoctors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_AllPatients.resx">
+      <DependentUpon>Admin_AllPatients.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_CreateNewAdmin.resx">
       <DependentUpon>Admin_CreateNewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_MakeAppointment.resx">
+      <DependentUpon>Admin_MakeAppointment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Admin_UpdateInformation.resx">
       <DependentUpon>Admin_UpdateInformation.cs</DependentUpon>
@@ -366,6 +372,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\doctor %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

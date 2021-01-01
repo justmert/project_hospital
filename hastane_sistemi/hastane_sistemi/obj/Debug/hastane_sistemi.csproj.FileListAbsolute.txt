@@ -25,3 +25,7 @@ C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug
 C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Doctor_AssignedAppointments.resources
 C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Admin_CreateNewAdmin.resources
 C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Admin_UpdateInformation.resources
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Admin_AllPatients.resources
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Admin_AllDoctors.resources
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Admin_AllAppointments.resources
+C:\Users\merve\Desktop\hastane_sistemi\hastane_sistemi\hastane_sistemi\obj\Debug\hastane_sistemi.Admin_MakeAppointment.resources

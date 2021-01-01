@@ -39,45 +39,45 @@ namespace hastane_sistemi
             this.info_passive_appointment_count_label = new System.Windows.Forms.Label();
             this.create_new_admin_panel = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.update_admin_information_panel = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.all_appointments_panel = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.all_doctors_panel = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.all_patients_panel = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.all_admins_panel = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.info_active_appointment_count = new System.Windows.Forms.Panel();
             this.info_active_appointment_count_label = new System.Windows.Forms.Label();
             this.info_username_label = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.all_admins_panel = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.info_patient_count.SuspendLayout();
             this.info_doctor_count.SuspendLayout();
             this.info_passive_appointment_count.SuspendLayout();
             this.create_new_admin_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.update_admin_information_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.all_appointments_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.all_doctors_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.all_patients_panel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.info_active_appointment_count.SuspendLayout();
             this.all_admins_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.info_active_appointment_count.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -187,23 +187,12 @@ namespace hastane_sistemi
             this.label9.Text = "Admin oluştur";
             this.label9.Click += new System.EventHandler(this.create_new_admin_panel_Click);
             // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::hastane_sistemi.Properties.Resources.father;
-            this.pictureBox5.Location = new System.Drawing.Point(42, 0);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.create_new_admin_panel_Click);
-            // 
             // update_admin_information_panel
             // 
             this.update_admin_information_panel.BackColor = System.Drawing.Color.MediumOrchid;
             this.update_admin_information_panel.Controls.Add(this.label3);
             this.update_admin_information_panel.Controls.Add(this.pictureBox8);
-            this.update_admin_information_panel.Location = new System.Drawing.Point(789, 412);
+            this.update_admin_information_panel.Location = new System.Drawing.Point(571, 412);
             this.update_admin_information_panel.Name = "update_admin_information_panel";
             this.update_admin_information_panel.Size = new System.Drawing.Size(182, 152);
             this.update_admin_information_panel.TabIndex = 1;
@@ -219,16 +208,6 @@ namespace hastane_sistemi
             this.label3.TabIndex = 22;
             this.label3.Text = "Bilgileri Düzenle";
             this.label3.Click += new System.EventHandler(this.update_admin_information_panel_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::hastane_sistemi.Properties.Resources.edit;
-            this.pictureBox8.Location = new System.Drawing.Point(42, 0);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox8.TabIndex = 22;
-            this.pictureBox8.TabStop = false;
             // 
             // all_appointments_panel
             // 
@@ -252,17 +231,6 @@ namespace hastane_sistemi
             this.label8.Text = "Tüm Randevular";
             this.label8.Click += new System.EventHandler(this.all_appointments_panel_Click);
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::hastane_sistemi.Properties.Resources.interview_date;
-            this.pictureBox3.Location = new System.Drawing.Point(44, 0);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 20;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.all_appointments_panel_Click);
-            // 
             // all_doctors_panel
             // 
             this.all_doctors_panel.BackColor = System.Drawing.Color.CadetBlue;
@@ -285,17 +253,6 @@ namespace hastane_sistemi
             this.label6.Text = "Tüm Doktorlar";
             this.label6.Click += new System.EventHandler(this.all_doctors_panel_Click);
             // 
-            // pictureBox7
-            // 
-            this.pictureBox7.Image = global::hastane_sistemi.Properties.Resources.doctor__2_;
-            this.pictureBox7.Location = new System.Drawing.Point(39, 0);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox7.TabIndex = 20;
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.all_doctors_panel_Click);
-            // 
             // all_patients_panel
             // 
             this.all_patients_panel.BackColor = System.Drawing.Color.LightCoral;
@@ -317,67 +274,6 @@ namespace hastane_sistemi
             this.label7.TabIndex = 25;
             this.label7.Text = "Tüm Hastalar";
             this.label7.Click += new System.EventHandler(this.all_patients_panel_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::hastane_sistemi.Properties.Resources.healthcare;
-            this.pictureBox1.Location = new System.Drawing.Point(39, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 19;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.all_patients_panel_Click);
-            // 
-            // all_admins_panel
-            // 
-            this.all_admins_panel.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.all_admins_panel.Controls.Add(this.label5);
-            this.all_admins_panel.Controls.Add(this.pictureBox6);
-            this.all_admins_panel.Location = new System.Drawing.Point(571, 412);
-            this.all_admins_panel.Name = "all_admins_panel";
-            this.all_admins_panel.Size = new System.Drawing.Size(182, 152);
-            this.all_admins_panel.TabIndex = 2;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label5.Location = new System.Drawing.Point(40, 113);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(117, 23);
-            this.label5.TabIndex = 23;
-            this.label5.Text = "Tüm Adminler";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::hastane_sistemi.Properties.Resources.infected_people;
-            this.pictureBox6.Location = new System.Drawing.Point(44, 0);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 22;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::hastane_sistemi.Properties.Resources.management;
-            this.pictureBox4.Location = new System.Drawing.Point(858, 20);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(113, 113);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 19;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::hastane_sistemi.Properties.Resources.hospital__1_;
-            this.pictureBox2.Location = new System.Drawing.Point(33, 20);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(113, 113);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
             // 
             // info_active_appointment_count
             // 
@@ -411,6 +307,111 @@ namespace hastane_sistemi
             this.info_username_label.Text = "info_username_label";
             this.info_username_label.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Calibri", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label5.Location = new System.Drawing.Point(65, 112);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(60, 23);
+            this.label5.TabIndex = 23;
+            this.label5.Text = "Bilgi Al";
+            // 
+            // all_admins_panel
+            // 
+            this.all_admins_panel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.all_admins_panel.Controls.Add(this.label5);
+            this.all_admins_panel.Controls.Add(this.pictureBox6);
+            this.all_admins_panel.Location = new System.Drawing.Point(789, 412);
+            this.all_admins_panel.Name = "all_admins_panel";
+            this.all_admins_panel.Size = new System.Drawing.Size(182, 152);
+            this.all_admins_panel.TabIndex = 2;
+            this.all_admins_panel.Click += new System.EventHandler(this.take_information_panel_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::hastane_sistemi.Properties.Resources.edit;
+            this.pictureBox8.Location = new System.Drawing.Point(42, 0);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox8.TabIndex = 22;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::hastane_sistemi.Properties.Resources.information;
+            this.pictureBox6.Location = new System.Drawing.Point(44, 0);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 22;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::hastane_sistemi.Properties.Resources.patient__1_;
+            this.pictureBox1.Location = new System.Drawing.Point(39, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.all_patients_panel_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::hastane_sistemi.Properties.Resources.management;
+            this.pictureBox4.Location = new System.Drawing.Point(858, 20);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(113, 113);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 19;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::hastane_sistemi.Properties.Resources.hospital__1_;
+            this.pictureBox2.Location = new System.Drawing.Point(33, 20);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(113, 113);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::hastane_sistemi.Properties.Resources.doctor__2_;
+            this.pictureBox7.Location = new System.Drawing.Point(39, 0);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox7.TabIndex = 20;
+            this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.all_doctors_panel_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::hastane_sistemi.Properties.Resources.interview_date;
+            this.pictureBox3.Location = new System.Drawing.Point(44, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 20;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.all_appointments_panel_Click);
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::hastane_sistemi.Properties.Resources.father;
+            this.pictureBox5.Location = new System.Drawing.Point(42, 0);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 21;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.create_new_admin_panel_Click);
+            // 
             // AdminPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,7 +434,7 @@ namespace hastane_sistemi
             this.Controls.Add(this.all_appointments_panel);
             this.Controls.Add(this.create_new_admin_panel);
             this.Name = "AdminPanel";
-            this.Text = "AdminPanel";
+            this.Text = "Admin Paneli";
             this.info_patient_count.ResumeLayout(false);
             this.info_patient_count.PerformLayout();
             this.info_doctor_count.ResumeLayout(false);
@@ -442,26 +443,26 @@ namespace hastane_sistemi
             this.info_passive_appointment_count.PerformLayout();
             this.create_new_admin_panel.ResumeLayout(false);
             this.create_new_admin_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.update_admin_information_panel.ResumeLayout(false);
             this.update_admin_information_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.all_appointments_panel.ResumeLayout(false);
             this.all_appointments_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.all_doctors_panel.ResumeLayout(false);
             this.all_doctors_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.all_patients_panel.ResumeLayout(false);
             this.all_patients_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.all_admins_panel.ResumeLayout(false);
-            this.all_admins_panel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.info_active_appointment_count.ResumeLayout(false);
             this.info_active_appointment_count.PerformLayout();
+            this.all_admins_panel.ResumeLayout(false);
+            this.all_admins_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -483,11 +484,9 @@ namespace hastane_sistemi
         private System.Windows.Forms.Panel all_appointments_panel;
         private System.Windows.Forms.Panel all_doctors_panel;
         private System.Windows.Forms.Panel all_patients_panel;
-        private System.Windows.Forms.Panel all_admins_panel;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label9;
@@ -495,9 +494,11 @@ namespace hastane_sistemi
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel info_active_appointment_count;
         private System.Windows.Forms.Label info_active_appointment_count_label;
         private System.Windows.Forms.Label info_username_label;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel all_admins_panel;
     }
 }

@@ -65,6 +65,7 @@ namespace hastane_sistemi
 
                     else
                     {
+                        MessageBox.Show("Başarılı şekilde başvurdunuz");
                         this.Close();
                     }
                 }

@@ -98,7 +98,7 @@ namespace hastane_sistemi
             String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
-                String query = String.Format("UPDATE hastane.dbo.patient SET name = @name, surname = @surname, tc = @tc, phone = @phone, mail = @mail, password = @password Where tc = '{0}'", patient_information["tc"]); ;
+                String query = String.Format("UPDATE hastane.dbo.patient SET name = @name, surname = @surname, phone = @phone, mail = @mail, password = @password Where tc = '{0}'", patient_information["tc"]); ;
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@name", this.patient_edit_name_textbox.Text);

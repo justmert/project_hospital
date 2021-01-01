@@ -20,15 +20,13 @@ namespace hastane_sistemi
             this.doctor_information = new Dictionary<string, string>();
 
             get_doctor_information();
-
             update_panel_informations();
-
         }
 
         private void update_doctor_information()
         {
             this.info_tc_label.Text = "Kimlik Numarası: " + this.doctor_information["tc"];
-            this.greeting_label.Text = String.Format("Sayın {0} {1}", Utility.first_upper(this.doctor_information["name"]),
+            this.greeting_label.Text = String.Format("Sayın Dr. {0} {1}", Utility.first_upper(this.doctor_information["name"]),
                 Utility.first_upper(this.doctor_information["surname"]));
 
             this.info_mail_label.Text = "Mail: " + this.doctor_information["mail"];

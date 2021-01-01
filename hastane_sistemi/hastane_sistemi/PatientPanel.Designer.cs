@@ -31,11 +31,15 @@ namespace hastane_sistemi
         {
             this.appointment_selection_panel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.edit_information_panel = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.manage_past_appoinments = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.manage_current_appointments = new System.Windows.Forms.Panel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.greeting_label = new System.Windows.Forms.Label();
@@ -50,23 +54,19 @@ namespace hastane_sistemi
             this.info_mail_label = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.appointment_selection_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.edit_information_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             this.manage_past_appoinments.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.manage_current_appointments.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // appointment_selection_panel
@@ -91,6 +91,17 @@ namespace hastane_sistemi
             this.label1.Text = "Randevu Al";
             this.label1.Click += new System.EventHandler(this.appointment_selection_panel_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::hastane_sistemi.Properties.Resources.appointment;
+            this.pictureBox1.Location = new System.Drawing.Point(40, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.appointment_selection_panel_Click);
+            // 
             // edit_information_panel
             // 
             this.edit_information_panel.BackColor = System.Drawing.Color.Tan;
@@ -101,6 +112,17 @@ namespace hastane_sistemi
             this.edit_information_panel.Size = new System.Drawing.Size(185, 152);
             this.edit_information_panel.TabIndex = 1;
             this.edit_information_panel.Click += new System.EventHandler(this.edit_information_panel_Click);
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::hastane_sistemi.Properties.Resources.edit;
+            this.pictureBox6.Location = new System.Drawing.Point(44, 3);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 3;
+            this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.edit_information_panel_Click);
             // 
             // label5
             // 
@@ -124,6 +146,17 @@ namespace hastane_sistemi
             this.manage_past_appoinments.TabIndex = 1;
             this.manage_past_appoinments.Click += new System.EventHandler(this.manage_past_appoinments_Click);
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::hastane_sistemi.Properties.Resources.history__1_;
+            this.pictureBox5.Location = new System.Drawing.Point(44, 3);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 2;
+            this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.manage_past_appoinments_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -145,6 +178,17 @@ namespace hastane_sistemi
             this.manage_current_appointments.Size = new System.Drawing.Size(185, 152);
             this.manage_current_appointments.TabIndex = 2;
             this.manage_current_appointments.Click += new System.EventHandler(this.manage_current_appointments_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::hastane_sistemi.Properties.Resources.book_appointments;
+            this.pictureBox3.Location = new System.Drawing.Point(44, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 0;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.manage_current_appointments_Click);
             // 
             // label4
             // 
@@ -201,7 +245,7 @@ namespace hastane_sistemi
             // 
             this.info_current_appointments_label.AutoSize = true;
             this.info_current_appointments_label.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.info_current_appointments_label.Location = new System.Drawing.Point(3, 17);
+            this.info_current_appointments_label.Location = new System.Drawing.Point(16, 17);
             this.info_current_appointments_label.Name = "info_current_appointments_label";
             this.info_current_appointments_label.Size = new System.Drawing.Size(54, 24);
             this.info_current_appointments_label.TabIndex = 2;
@@ -222,7 +266,7 @@ namespace hastane_sistemi
             // 
             this.info_past_appointments_label.AutoSize = true;
             this.info_past_appointments_label.Font = new System.Drawing.Font("Calibri", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.info_past_appointments_label.Location = new System.Drawing.Point(3, 20);
+            this.info_past_appointments_label.Location = new System.Drawing.Point(3, 19);
             this.info_past_appointments_label.Name = "info_past_appointments_label";
             this.info_past_appointments_label.Size = new System.Drawing.Size(54, 24);
             this.info_past_appointments_label.TabIndex = 3;
@@ -291,50 +335,6 @@ namespace hastane_sistemi
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::hastane_sistemi.Properties.Resources.book_appointments;
-            this.pictureBox3.Location = new System.Drawing.Point(44, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 0;
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.manage_current_appointments_Click);
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::hastane_sistemi.Properties.Resources.history__1_;
-            this.pictureBox5.Location = new System.Drawing.Point(44, 3);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 2;
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.manage_past_appoinments_Click);
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::hastane_sistemi.Properties.Resources.edit;
-            this.pictureBox6.Location = new System.Drawing.Point(44, 3);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 3;
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.edit_information_panel_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::hastane_sistemi.Properties.Resources.appointment;
-            this.pictureBox1.Location = new System.Drawing.Point(40, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.appointment_selection_panel_Click);
-            // 
             // PatientPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,12 +357,16 @@ namespace hastane_sistemi
             this.Text = "Hasta Paneli";
             this.appointment_selection_panel.ResumeLayout(false);
             this.appointment_selection_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.edit_information_panel.ResumeLayout(false);
             this.edit_information_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             this.manage_past_appoinments.ResumeLayout(false);
             this.manage_past_appoinments.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.manage_current_appointments.ResumeLayout(false);
             this.manage_current_appointments.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -371,10 +375,6 @@ namespace hastane_sistemi
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

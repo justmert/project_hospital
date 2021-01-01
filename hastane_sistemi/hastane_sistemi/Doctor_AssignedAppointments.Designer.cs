@@ -31,18 +31,18 @@ namespace hastane_sistemi
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.appointment_done_button = new System.Windows.Forms.Button();
+            this.cancel_appointment_button = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.appointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hastaneDataSet = new hastane_sistemi.hastaneDataSet();
-            this.cancel_appointment_button = new System.Windows.Forms.Button();
             this.active_appointmentsToolStrip = new System.Windows.Forms.ToolStrip();
             this.active_appointmentsToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.appointment_done_button = new System.Windows.Forms.Button();
             this.appointmentTableAdapter = new hastane_sistemi.hastaneDataSetTableAdapters.appointmentTableAdapter();
-            this.tcDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentBindingSource)).BeginInit();
@@ -62,6 +62,26 @@ namespace hastane_sistemi
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Aktif Randevular";
             // 
+            // appointment_done_button
+            // 
+            this.appointment_done_button.Location = new System.Drawing.Point(390, 242);
+            this.appointment_done_button.Name = "appointment_done_button";
+            this.appointment_done_button.Size = new System.Drawing.Size(141, 31);
+            this.appointment_done_button.TabIndex = 3;
+            this.appointment_done_button.Text = "Randevu Gerçekleştirildi";
+            this.appointment_done_button.UseVisualStyleBackColor = true;
+            this.appointment_done_button.Click += new System.EventHandler(this.appointment_done_button_Click);
+            // 
+            // cancel_appointment_button
+            // 
+            this.cancel_appointment_button.Location = new System.Drawing.Point(37, 242);
+            this.cancel_appointment_button.Name = "cancel_appointment_button";
+            this.cancel_appointment_button.Size = new System.Drawing.Size(130, 31);
+            this.cancel_appointment_button.TabIndex = 1;
+            this.cancel_appointment_button.Text = "Randevuyu İptal Et";
+            this.cancel_appointment_button.UseVisualStyleBackColor = true;
+            this.cancel_appointment_button.Click += new System.EventHandler(this.cancel_appointment_button_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -70,10 +90,10 @@ namespace hastane_sistemi
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tcDataGridViewTextBoxColumn,
-            this.nameDataGridViewTextBoxColumn,
-            this.surnameDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn});
+            this.tc,
+            this.name,
+            this.surname,
+            this.description});
             this.dataGridView1.DataSource = this.appointmentBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(37, 32);
             this.dataGridView1.Name = "dataGridView1";
@@ -90,15 +110,6 @@ namespace hastane_sistemi
             // 
             this.hastaneDataSet.DataSetName = "hastaneDataSet";
             this.hastaneDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // cancel_appointment_button
-            // 
-            this.cancel_appointment_button.Location = new System.Drawing.Point(37, 242);
-            this.cancel_appointment_button.Name = "cancel_appointment_button";
-            this.cancel_appointment_button.Size = new System.Drawing.Size(130, 31);
-            this.cancel_appointment_button.TabIndex = 1;
-            this.cancel_appointment_button.Text = "Randevuyu İptal Et";
-            this.cancel_appointment_button.UseVisualStyleBackColor = true;
             // 
             // active_appointmentsToolStrip
             // 
@@ -118,48 +129,38 @@ namespace hastane_sistemi
             this.active_appointmentsToolStripButton.Size = new System.Drawing.Size(121, 22);
             this.active_appointmentsToolStripButton.Text = "active_appointments";
             // 
-            // appointment_done_button
-            // 
-            this.appointment_done_button.Location = new System.Drawing.Point(390, 242);
-            this.appointment_done_button.Name = "appointment_done_button";
-            this.appointment_done_button.Size = new System.Drawing.Size(141, 31);
-            this.appointment_done_button.TabIndex = 3;
-            this.appointment_done_button.Text = "Randevu Gerçekleştirildi";
-            this.appointment_done_button.UseVisualStyleBackColor = true;
-            this.appointment_done_button.Click += new System.EventHandler(this.appointment_done_button_Click);
-            // 
             // appointmentTableAdapter
             // 
             this.appointmentTableAdapter.ClearBeforeFill = true;
             // 
-            // tcDataGridViewTextBoxColumn
+            // tc
             // 
-            this.tcDataGridViewTextBoxColumn.DataPropertyName = "tc";
-            this.tcDataGridViewTextBoxColumn.HeaderText = "Hasta Kimlik Numarası";
-            this.tcDataGridViewTextBoxColumn.Name = "tcDataGridViewTextBoxColumn";
-            this.tcDataGridViewTextBoxColumn.ReadOnly = true;
-            this.tcDataGridViewTextBoxColumn.Width = 150;
+            this.tc.DataPropertyName = "tc";
+            this.tc.HeaderText = "Hasta Kimlik Numarası";
+            this.tc.Name = "tc";
+            this.tc.ReadOnly = true;
+            this.tc.Width = 150;
             // 
-            // nameDataGridViewTextBoxColumn
+            // name
             // 
-            this.nameDataGridViewTextBoxColumn.DataPropertyName = "name";
-            this.nameDataGridViewTextBoxColumn.HeaderText = "Hasta İsim";
-            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
-            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.name.DataPropertyName = "name";
+            this.name.HeaderText = "Hasta İsim";
+            this.name.Name = "name";
+            this.name.ReadOnly = true;
             // 
-            // surnameDataGridViewTextBoxColumn
+            // surname
             // 
-            this.surnameDataGridViewTextBoxColumn.DataPropertyName = "surname";
-            this.surnameDataGridViewTextBoxColumn.HeaderText = "Hasta Soyisim";
-            this.surnameDataGridViewTextBoxColumn.Name = "surnameDataGridViewTextBoxColumn";
-            this.surnameDataGridViewTextBoxColumn.ReadOnly = true;
+            this.surname.DataPropertyName = "surname";
+            this.surname.HeaderText = "Hasta Soyisim";
+            this.surname.Name = "surname";
+            this.surname.ReadOnly = true;
             // 
-            // descriptionDataGridViewTextBoxColumn
+            // description
             // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Hasta Şikayeti";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
+            this.description.DataPropertyName = "description";
+            this.description.HeaderText = "Hasta Şikayeti";
+            this.description.Name = "description";
+            this.description.ReadOnly = true;
             // 
             // Doctor_AssignedAppointments
             // 
@@ -194,9 +195,9 @@ namespace hastane_sistemi
         private System.Windows.Forms.ToolStrip active_appointmentsToolStrip;
         private System.Windows.Forms.ToolStripButton active_appointmentsToolStripButton;
         private System.Windows.Forms.Button appointment_done_button;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tcDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn surnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn surname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn description;
     }
 }

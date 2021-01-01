@@ -37,7 +37,7 @@ namespace hastane_sistemi
             get_patient_information();
             Patient_EditInformation edit_form = new Patient_EditInformation(this.patient_information);
             edit_form.ShowDialog();
-            update_patient_information();
+            get_patient_information();
         }
 
         private void update_patient_information()
@@ -109,6 +109,7 @@ namespace hastane_sistemi
         {
             Patient_PastAppointments show_appoinments = new Patient_PastAppointments(this.tc);
             show_appoinments.ShowDialog();
+            update_panel_informations();
 
         }
 

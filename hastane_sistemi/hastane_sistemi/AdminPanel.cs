@@ -101,7 +101,7 @@ namespace hastane_sistemi
         private void update_admin_information()
         {
             this.info_username_label.Text = "Kullanıcı İsmi: " + this.admin_information["username"];
-            this.greeting_label.Text = String.Format("Sayın Admin {0} {1}", Utility.first_upper(this.admin_information["name"]),
+            this.greeting_label.Text = String.Format("Sayın Admin, {0} {1}", Utility.first_upper(this.admin_information["name"]),
                 Utility.first_upper(this.admin_information["surname"]));
         }
 
@@ -113,8 +113,9 @@ namespace hastane_sistemi
 
         private void update_admin_information_panel_Click(object sender, EventArgs e)
         {
-            Admin_UpdateInformation update_admin_information_form = new Admin_UpdateInformation(this.admin_information["username"]);
+            Admin_UpdateInformation update_admin_information_form = new Admin_UpdateInformation(this.admin_information);
             update_admin_information_form.ShowDialog();
+            update_admin_information();
 
         }
 
@@ -122,6 +123,7 @@ namespace hastane_sistemi
         {
             Admin_AllAppointments show_all_appointments_form = new Admin_AllAppointments();
             show_all_appointments_form.ShowDialog();
+            update_panel_informations();
 
         }
 
@@ -129,6 +131,7 @@ namespace hastane_sistemi
         {
             Admin_AllDoctors show_all_doctors_form = new Admin_AllDoctors();
             show_all_doctors_form.ShowDialog();
+            update_panel_informations();
 
         }
 
@@ -136,6 +139,12 @@ namespace hastane_sistemi
         {
             Admin_AllPatients show_all_patients_form = new Admin_AllPatients();
             show_all_patients_form.ShowDialog();
+            update_panel_informations();
+        }
+
+        private void take_information_panel_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esra Hastanesi Yönetim Sistemi");
         }
     }
 }

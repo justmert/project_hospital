@@ -1,9 +1,30 @@
 admin panel
 {
-	Update Database ( - add columns "name" and "surname")
+	-done-Update Database ( - add columns "name" and "surname")
 	Create New Admin 
 	Change Admin İnformation
 	List All Appointments
 	List All Doctors
 	List All Patients
 }
+
+
+edit all connection strings to utility
+<<<make approved after sign up
+___make distiction on tc 
+<<<panel --- appoitnments ---close button
+<<<admin panel --- appoimntments --- add appointment - update gridview
+<<<admin panel --- appointments ---- remove appointment  and update gridview
+___admin panel --- doctors --- search by tc
+<<<admin panel --- update information --- doesnt fill
+<<<admin panel --- take information -- implement it
+
+patient panel --- appointments --- cancel appointment
+patient panel --- update panel - wrong line
+
+
+doctor panel --- update panel place, it is too right
+doctor panel --- edit greetings to "Sayın Dr."
+doctor panel --- cancel appointments -- implement
+doctor panel --- approve appointments --- implement
+doctor panel --- update panel - wrong line

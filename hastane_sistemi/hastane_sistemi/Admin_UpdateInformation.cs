@@ -15,11 +15,16 @@ namespace hastane_sistemi
     public partial class Admin_UpdateInformation : Form
     {
         private String admin_username;
+        Dictionary<String, String> admin_information;
 
-        public Admin_UpdateInformation(String admin_username)
+        public Admin_UpdateInformation(Dictionary<String, String> admin_information)
         {
             InitializeComponent();
-            this.admin_username = admin_username;
+            this.admin_username = admin_information["username"];
+            this.admin_information = admin_information;
+            this.admin_name_textbox.Text = admin_information["name"];
+            this.admin_surname_textbox.Text = admin_information["surname"];
+            this.admin_password_textbox.Text = admin_information["password"];
         }
 
         private void saveFields()
@@ -80,6 +85,11 @@ namespace hastane_sistemi
             }
 
             saveFields();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

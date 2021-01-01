@@ -37,11 +37,13 @@ namespace hastane_sistemi
             this.label2 = new System.Windows.Forms.Label();
             this.admin_name_textbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.update_admin_button);
             this.groupBox1.Controls.Add(this.admin_password_textbox);
             this.groupBox1.Controls.Add(this.label4);
@@ -58,7 +60,7 @@ namespace hastane_sistemi
             // 
             // update_admin_button
             // 
-            this.update_admin_button.Location = new System.Drawing.Point(216, 169);
+            this.update_admin_button.Location = new System.Drawing.Point(363, 168);
             this.update_admin_button.Name = "update_admin_button";
             this.update_admin_button.Size = new System.Drawing.Size(143, 26);
             this.update_admin_button.TabIndex = 8;
@@ -68,7 +70,7 @@ namespace hastane_sistemi
             // 
             // admin_password_textbox
             // 
-            this.admin_password_textbox.Location = new System.Drawing.Point(387, 35);
+            this.admin_password_textbox.Location = new System.Drawing.Point(378, 35);
             this.admin_password_textbox.Name = "admin_password_textbox";
             this.admin_password_textbox.PasswordChar = '*';
             this.admin_password_textbox.Size = new System.Drawing.Size(119, 20);
@@ -77,7 +79,7 @@ namespace hastane_sistemi
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(353, 38);
+            this.label4.Location = new System.Drawing.Point(344, 38);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(166, 39);
             this.label4.TabIndex = 6;
@@ -115,14 +117,25 @@ namespace hastane_sistemi
             this.label1.TabIndex = 0;
             this.label1.Text = "İsim";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(48, 170);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(122, 23);
+            this.button1.TabIndex = 9;
+            this.button1.Text = "Kaydetmeden Çık";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Admin_UpdateInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(599, 246);
             this.Controls.Add(this.groupBox1);
             this.Name = "Admin_UpdateInformation";
-            this.Text = "Admin_UpdateInformation";
+            this.Text = "Admin Bilgilerini Güncelleme Sistemi";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -139,5 +152,6 @@ namespace hastane_sistemi
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox admin_name_textbox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

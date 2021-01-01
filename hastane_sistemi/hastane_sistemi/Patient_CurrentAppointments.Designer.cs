@@ -31,25 +31,25 @@ namespace hastane_sistemi
         {
             this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.doctornameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.doctorsurnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sectionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.appointmentBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.hastaneDataSet = new hastane_sistemi.hastaneDataSet();
+            this.button1 = new System.Windows.Forms.Button();
             this.appointmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.appointmentTableAdapter = new hastane_sistemi.hastaneDataSetTableAdapters.appointmentTableAdapter();
             this.current_appoinments_fillToolStrip = new System.Windows.Forms.ToolStrip();
             this.tc_numToolStripLabel = new System.Windows.Forms.ToolStripLabel();
             this.tc_numToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
             this.current_appoinments_fillToolStripButton = new System.Windows.Forms.ToolStripButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.current_appoinments_fillToolStrip1 = new System.Windows.Forms.ToolStrip();
             this.tc_numToolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.tc_numToolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.current_appoinments_fillToolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.button2 = new System.Windows.Forms.Button();
+            this.doctor_name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.doctor_surname = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.description = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.section = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.appointmentBindingSource1)).BeginInit();
@@ -71,6 +71,16 @@ namespace hastane_sistemi
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Devam Eden Randevular";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(421, 226);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 31);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "Kapat";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -78,44 +88,16 @@ namespace hastane_sistemi
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.doctornameDataGridViewTextBoxColumn,
-            this.doctorsurnameDataGridViewTextBoxColumn,
-            this.descriptionDataGridViewTextBoxColumn,
-            this.sectionDataGridViewTextBoxColumn});
+            this.doctor_name,
+            this.doctor_surname,
+            this.description,
+            this.section});
             this.dataGridView1.DataSource = this.appointmentBindingSource1;
             this.dataGridView1.Location = new System.Drawing.Point(53, 38);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(443, 150);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // doctornameDataGridViewTextBoxColumn
-            // 
-            this.doctornameDataGridViewTextBoxColumn.DataPropertyName = "doctor_name";
-            this.doctornameDataGridViewTextBoxColumn.HeaderText = "Doktor İsim";
-            this.doctornameDataGridViewTextBoxColumn.Name = "doctornameDataGridViewTextBoxColumn";
-            this.doctornameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // doctorsurnameDataGridViewTextBoxColumn
-            // 
-            this.doctorsurnameDataGridViewTextBoxColumn.DataPropertyName = "doctor_surname";
-            this.doctorsurnameDataGridViewTextBoxColumn.HeaderText = "Doktor Soyisim";
-            this.doctorsurnameDataGridViewTextBoxColumn.Name = "doctorsurnameDataGridViewTextBoxColumn";
-            this.doctorsurnameDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "Hasta Şikayeti";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            this.descriptionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // sectionDataGridViewTextBoxColumn
-            // 
-            this.sectionDataGridViewTextBoxColumn.DataPropertyName = "section";
-            this.sectionDataGridViewTextBoxColumn.HeaderText = "Bölüm";
-            this.sectionDataGridViewTextBoxColumn.Name = "sectionDataGridViewTextBoxColumn";
-            this.sectionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // appointmentBindingSource1
             // 
@@ -126,6 +108,16 @@ namespace hastane_sistemi
             // 
             this.hastaneDataSet.DataSetName = "hastaneDataSet";
             this.hastaneDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(53, 226);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(150, 31);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Randevuyu İptal Et";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // appointmentBindingSource
             // 
@@ -168,16 +160,6 @@ namespace hastane_sistemi
             this.current_appoinments_fillToolStripButton.Size = new System.Drawing.Size(142, 22);
             this.current_appoinments_fillToolStripButton.Text = "current_appoinments_fill";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(53, 226);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 31);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Randevuyu İptal Et";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // current_appoinments_fillToolStrip1
             // 
             this.current_appoinments_fillToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -210,15 +192,33 @@ namespace hastane_sistemi
             this.current_appoinments_fillToolStripButton1.Size = new System.Drawing.Size(142, 22);
             this.current_appoinments_fillToolStripButton1.Text = "current_appoinments_fill";
             // 
-            // button2
+            // doctor_name
             // 
-            this.button2.Location = new System.Drawing.Point(421, 226);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 31);
-            this.button2.TabIndex = 4;
-            this.button2.Text = "Kapat";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.doctor_name.DataPropertyName = "doctor_name";
+            this.doctor_name.HeaderText = "Doktor İsim";
+            this.doctor_name.Name = "doctor_name";
+            this.doctor_name.ReadOnly = true;
+            // 
+            // doctor_surname
+            // 
+            this.doctor_surname.DataPropertyName = "doctor_surname";
+            this.doctor_surname.HeaderText = "Doktor Soyisim";
+            this.doctor_surname.Name = "doctor_surname";
+            this.doctor_surname.ReadOnly = true;
+            // 
+            // description
+            // 
+            this.description.DataPropertyName = "description";
+            this.description.HeaderText = "Hasta Şikayeti";
+            this.description.Name = "description";
+            this.description.ReadOnly = true;
+            // 
+            // section
+            // 
+            this.section.DataPropertyName = "section";
+            this.section.HeaderText = "Bölüm";
+            this.section.Name = "section";
+            this.section.ReadOnly = true;
             // 
             // Patient_CurrentAppointments
             // 
@@ -263,10 +263,10 @@ namespace hastane_sistemi
         private System.Windows.Forms.ToolStripTextBox tc_numToolStripTextBox1;
         private System.Windows.Forms.ToolStripButton current_appoinments_fillToolStripButton1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doctornameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn doctorsurnameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn descriptionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sectionDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn doctor_name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn doctor_surname;
+        private System.Windows.Forms.DataGridViewTextBoxColumn description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn section;
     }
 }

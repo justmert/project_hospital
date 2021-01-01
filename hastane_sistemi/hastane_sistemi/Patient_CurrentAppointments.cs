@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace hastane_sistemi
 {
@@ -23,46 +24,42 @@ namespace hastane_sistemi
 
         private void button1_Click(object sender, EventArgs e)
         {
-            foreach (DataGridViewCell oneCell in dataGridView1.SelectedCells)
+            if (dataGridView1.SelectedRows.Count == 1)
             {
-                if (oneCell.Selected)
-                {
-                    dataGridView1.Rows.RemoveAt(oneCell.RowIndex);
+                var row = dataGridView1.SelectedRows[0];
+                String doctor_name = row.Cells["doctor_name"].Value.ToString();
+                String doctor_surname = row.Cells["doctor_surname"].Value.ToString();
+                String description = row.Cells["description"].Value.ToString();
 
+                String connection_str = Utility.ConnectionStr;
+                using (SqlConnection connection = new SqlConnection(connection_str))
+                {
+                    String query = String.Format("delete from hastane.dbo.appointment Where doctor_name = '{0}' and doctor_surname = '{1}' and description = '{2}'",
+                        doctor_name, doctor_surname, description); ;
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        connection.Open();
+                        int result = command.ExecuteNonQuery();
+                        // Check Error
+                        if (result < 0)
+                            MessageBox.Show("Randevu Silinemedi!");
+
+                        else
+                        {
+                            MessageBox.Show("Randevu Silindi");
+                        }
+                    }
                 }
+
+                this.appointmentTableAdapter.current_appoinments_fill(this.hastaneDataSet.appointment, this.patient_tc);
             }
 
-            //    String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
-            //    using (SqlConnection connection = new SqlConnection(connection_str))
-            //    {
-            //        string query = "DELETE FROM SpellingList WHERE tc = @rowID";
+            else
+            {
+                MessageBox.Show("Lütfen bir satır seçiniz");
+            }
+            this.appointmentTableAdapter.current_appoinments_fill(this.hastaneDataSet.appointment, this.patient_tc);
 
-            //        // Create the connection and the command inside a using block
-            //        using (SqlCommand deleteRecord = new SqlCommand(query, connection))
-            //        {
-            //            connection.Open();
-
-            //            foreach (DataGridViewCell oneCell in dataGridView1.SelectedCells)
-            //            {
-            //                if (oneCell.Selected)
-            //                {
-            //                    dataGridView1.Rows.RemoveAt(oneCell.RowIndex);
-            //                    dataGridView1.Rows[oneCell.RowIndex].Cells[]
-
-            //                }
-            //            }
-
-            //            int selectedIndex = dataGridView1.SelectedRows[0].Index;
-
-            //            int rowID = dataGridView1.select;
-
-            //            // Add the parameter to the command collection
-            //            deleteRecord.Parameters.Add("@rowID", SqlDbType.Int).Value = rowID;
-            //            deleteRecord.ExecuteNonQuery();
-
-            //            dataGridView1.Rows.RemoveAt(selectedIndex);
-            //        }
-            //    }
         }
 
         private void button2_Click(object sender, EventArgs e)
