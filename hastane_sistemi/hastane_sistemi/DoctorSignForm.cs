@@ -22,7 +22,7 @@ namespace hastane_sistemi
         private void fetchDepartment()
         {
 
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = "SELECT * from hastane.dbo.department";
@@ -42,7 +42,7 @@ namespace hastane_sistemi
 
         private void saveFields()
         {
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = "INSERT INTO hastane.dbo.doctor (name,surname,tc,phone,mail,department, password) VALUES (@name,@surname,@tc,@phone, @mail, @department, @password)"; ;

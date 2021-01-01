@@ -29,7 +29,7 @@ namespace hastane_sistemi
 
         private void saveFields()
         {
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = String.Format("UPDATE hastane.dbo.admin SET name = @name, surname = @surname, password = @password Where username = '{0}", this.admin_username);

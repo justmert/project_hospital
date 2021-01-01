@@ -17,7 +17,7 @@ namespace hastane_sistemi
             String password = this.patient_password_textbox.Text;
             String name = null, surname = null;
 
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = String.Format("SELECT * from hastane.dbo.patient where tc = '{0}' AND password ='{1}'", tc, password)

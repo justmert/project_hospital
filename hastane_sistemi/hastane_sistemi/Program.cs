@@ -19,7 +19,7 @@ namespace hastane_sistemi
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Utility.ConnectionStr = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            Utility.ConnectionStr = Utility.ConnectionStr;
             EntryForm entry_form = new EntryForm();
             Application.Run(entry_form);
 

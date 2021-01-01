@@ -95,7 +95,7 @@ namespace hastane_sistemi
 
         private void saveFields()
         {
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = String.Format("UPDATE hastane.dbo.patient SET name = @name, surname = @surname, phone = @phone, mail = @mail, password = @password Where tc = '{0}'", patient_information["tc"]); ;

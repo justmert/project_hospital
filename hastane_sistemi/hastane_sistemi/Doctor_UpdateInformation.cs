@@ -23,7 +23,7 @@ namespace hastane_sistemi
 
         private void fill_department_combobox()
         {
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = "SELECT * from hastane.dbo.department";
@@ -55,7 +55,7 @@ namespace hastane_sistemi
         }
         private void saveFields()
         {
-            String connection_str = "Data Source=LAPTOP-QC3TVQQG\\SQLEXPRESS;Initial Catalog=hastane;Integrated Security=True";
+            String connection_str = Utility.ConnectionStr;
             using (SqlConnection connection = new SqlConnection(connection_str))
             {
                 String query = String.Format("UPDATE hastane.dbo.doctor SET name = @name, surname = @surname,phone = @phone, mail = @mail, department = @department, password = @password Where tc = '{0}'", doctor_information["tc"]); ;
